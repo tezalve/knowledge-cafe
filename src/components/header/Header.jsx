@@ -14,7 +14,7 @@ const Header = () => {
         <>
             <nav className='navbar'>
                 <h2>Knowledge Cafe</h2>
-                <img className='authorImg' src={data[0].authorImg} alt="" />
+                {/* <img className='authorImg' src={data[0].authorImg} alt="" /> */}
             </nav>
             <hr />
         </>
