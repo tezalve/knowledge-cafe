@@ -1,11 +1,11 @@
 import React from 'react';
 import './Blog.css'
 
-const Blog = () => {
-
+const Blog = (props) => {
+    const {authorImg, authorName, blogTitle, img} = props.blog;
     return (
         <div>
-            <p>this is a blog</p>
+            <img className='blog-img' src={img} alt="" />
         </div>
     );
 };

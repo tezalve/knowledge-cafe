@@ -1,0 +1,10 @@
+.blog-page-container{
+    display: grid;
+    grid-template-columns: 4fr 1fr;
+}
+.blog-container{
+    display: grid;
+    grid-template-rows: repeat(4, 1fr);
+    gap: 45px;
+    margin: 50px;
+}

@@ -12,10 +12,15 @@ const Blogs = () => {
     }, [])
 
     return (
-        <div>
-            {
-                blogs.map(blog => <Blog key={blog.id}></Blog>)
-            }
+        <div className='blog-page-container'>
+            <div className='blog-container'>            
+                {
+                    blogs.map(blog => <Blog 
+                        key={blog.id}
+                        blog={blog}
+                    ></Blog>)
+                }
+            </div>
         </div>
     );
 };

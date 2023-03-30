@@ -1,4 +1,4 @@
-.blog-container{
-    display: grid;
-    grid-template-rows: 4fr;
+.blog-img{
+    height: 450px;
+    width: 845px;
 }
