@@ -1,6 +1,6 @@
 .blog-page-container{
     display: grid;
-    grid-template-columns: 3fr 1fr;
+    grid-template-columns: 3fr 1.5fr;
 }
 .blogs-container{
     display: grid;
@@ -13,5 +13,11 @@
     position: sticky;
     top: 0;
     height: min-content;
-    padding-top: 40px;
+    padding: 40px;
 }
+
+@media only screen and (max-width: 767px) {
+    .blog-page-container{
+        grid-template-columns: 1fr;
+    }
+  }
