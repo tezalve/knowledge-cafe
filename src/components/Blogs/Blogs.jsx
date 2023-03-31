@@ -19,7 +19,7 @@ const Blogs = () => {
 
     const handleBookmark = (title) => {
         if(bookmarks.includes(title)){
-            toast.info("Already Bookmarked");
+            toast.info(`"${title}" blog is already bookmarked`);
         }else{
             const newBookmarks = [...bookmarks, title];
             setBookmarks(newBookmarks);

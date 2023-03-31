@@ -5,7 +5,6 @@ const Blog = (props) => {
     const {authorImg, authorName, blogTitle, img, time} = props.blog;
     const handleBookmark = props.handleBookmark;
     const handleTime = props.handleTime;
-    console.log(time);
     
     return (
         <div className='blog-container'>
