@@ -13,7 +13,7 @@ const Blogs = () => {
 
     return (
         <div className='blog-page-container'>
-            <div className='blog-container'>            
+            <div className='blogs-container'>            
                 {
                     blogs.map(blog => <Blog 
                         key={blog.id}
