@@ -3,14 +3,14 @@ import Blog from '../Blog/Blog';
 import './Blogs.css'
 
 const Blogs = () => {
-    const [blogs, setData] = useState([]);
+    let [blogs, setData] = useState([]);
 
     useEffect( () =>{
         fetch('data.json')
         .then(res => res.json())
         .then(data => setData(data))
     }, [])
-
+      
     return (
         <div className='blog-page-container'>
             <div className='blogs-container'>            

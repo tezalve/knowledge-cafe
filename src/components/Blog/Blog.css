@@ -14,12 +14,15 @@
 }
 
 .para{
+    display: flex;
     font-size: 13px;
+    justify-content: center;
 }
 
 .bookmark{
     height: 18px;
     width: 15px;
+    padding: 1px;
 }
 
 .bookmark:hover{
