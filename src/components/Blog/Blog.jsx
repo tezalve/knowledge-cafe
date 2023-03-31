@@ -1,5 +1,6 @@
 import React from 'react';
 import './Blog.css'
+import bookmarklogo from "../../../public/bookmark-regular.svg"
 
 const Blog = (props) => {
     const {authorImg, authorName, blogTitle, img, time} = props.blog;
@@ -17,7 +18,7 @@ const Blog = (props) => {
                         <p className='para'>Mar 15 (4 days ago)</p>
                     </div>
                 </div>
-                <p className='para'><span className='min'>{time} </span> min read<span className='bookmarks' onClick={() => handleBookmark(blogTitle)}><img className='bookmark' src="public\bookmark-regular.svg" alt="" /></span></p>
+                <p className='para'><span className='min'>{time} </span> min read<span className='bookmarks' onClick={() => handleBookmark(blogTitle)}><img className='bookmark' src={bookmarklogo} alt="" /></span></p>
             </div>
             <h2>{blogTitle}</h2>
             <p>#programming #beginners</p>

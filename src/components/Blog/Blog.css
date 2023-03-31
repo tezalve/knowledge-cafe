@@ -27,7 +27,6 @@
 }
 
 .bookmark:hover{
-    content: url("public/bookmark-solid.svg");
     cursor: pointer;
 }
 
