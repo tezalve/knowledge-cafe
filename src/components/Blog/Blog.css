@@ -29,3 +29,12 @@
     content: url("public/bookmark-solid.svg");
     cursor: pointer;
 }
+
+.mark{
+    cursor: pointer;
+}
+
+.bookmarks{
+    display: flex;
+    flex-direction: column;
+}

@@ -3,6 +3,8 @@ import './Blog.css'
 
 const Blog = (props) => {
     const {authorImg, authorName, blogTitle, img, time} = props.blog;
+    const handleMarkAsRead = props.handleMarkAsRead;
+    
     return (
         <div className='blog-container'>
             <img className='blog-img' src={img} alt="" />
@@ -14,11 +16,11 @@ const Blog = (props) => {
                         <p className='para'>Mar 15 (4 days ago)</p>
                     </div>
                 </div>
-                <p className='para'><span className='min'>{time}</span> min read<span><img className='bookmark' src="public\bookmark-regular.svg" alt="" /></span></p>
+                <p className='para'><span className='min'>{time}</span> min read<span className='bookmarks' onClick={() => handleMarkAsRead(blogTitle)}><img className='bookmark' src="public\bookmark-regular.svg" alt="" /></span></p>
             </div>
             <h2>{blogTitle}</h2>
             <p>#programming #beginners</p>
-            <a>Mark As Read</a>
+            <a  className='mark'>Mark As Read</a>
         </div>
     );
 };
