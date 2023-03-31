@@ -4,7 +4,7 @@ import './Bookmark.css'
 
 const Bookmark = ({bookmark}) => {
     return (
-        <div className='asd'>
+        <div className='book'>
             {bookmark}
         </div>
     );
