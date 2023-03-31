@@ -3,6 +3,8 @@ import Blog from '../Blog/Blog';
 import Bookmarks from '../Bookmarks/Bookmarks';
 import Time from '../Time/Time';
 import './Blogs.css'
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 const Blogs = () => {
     const [blogs, setData] = useState([]);
@@ -16,8 +18,13 @@ const Blogs = () => {
     }, [])
 
     const handleBookmark = (title) => {
-        const newBookmarks = [...bookmarks, title];
-        setBookmarks(newBookmarks);
+        if(bookmarks.includes(title)){
+            toast.info("Already Bookmarked");
+        }else{
+            const newBookmarks = [...bookmarks, title];
+            setBookmarks(newBookmarks);
+        }
+        
     }
 
     const handleTime = (time) => {
@@ -26,6 +33,7 @@ const Blogs = () => {
     }
       
     return (
+        
         <div className='blog-page-container'>
             <div className='blogs-container'>            
                 {
@@ -40,6 +48,7 @@ const Blogs = () => {
             <div className='right-side-containter'>
                 <Time times={times}></Time>
                 <Bookmarks bookmarks={bookmarks}></Bookmarks>
+                <ToastContainer/>
             </div>
         </div>
     );
