@@ -1,11 +1,13 @@
 import React, { useEffect, useState } from 'react';
 import Blog from '../Blog/Blog';
 import Bookmarks from '../Bookmarks/Bookmarks';
+import Time from '../Time/Time';
 import './Blogs.css'
 
 const Blogs = () => {
     const [blogs, setData] = useState([]);
     const [bookmarks, setBookmarks] = useState([]);
+    const [times, setTimes] = useState([]);
 
     useEffect( () =>{
         fetch('data.json')
@@ -13,9 +15,14 @@ const Blogs = () => {
         .then(data => setData(data))
     }, [])
 
-    const handleMarkAsRead = (title) => {
+    const handleBookmark = (title) => {
         const newBookmarks = [...bookmarks, title];
         setBookmarks(newBookmarks);
+    }
+
+    const handleTime = (time) => {
+        const newTimes = [...times, time];
+        setTimes(newTimes);
     }
       
     return (
@@ -25,12 +32,13 @@ const Blogs = () => {
                     blogs.map(blog => <Blog
                         key={blog.id}
                         blog={blog}
-                        handleMarkAsRead={handleMarkAsRead}
+                        handleBookmark={handleBookmark}
+                        handleTime={handleTime}
                     ></Blog>)
                 }
             </div>
             <div className='right-side-containter'>
-                <p>Spent time on read : <span>123</span> min</p>
+                <Time times={times}></Time>
                 <Bookmarks bookmarks={bookmarks}></Bookmarks>
             </div>
         </div>

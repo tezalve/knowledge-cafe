@@ -33,8 +33,3 @@
 .mark{
     cursor: pointer;
 }
-
-.bookmarks{
-    display: flex;
-    flex-direction: column;
-}
