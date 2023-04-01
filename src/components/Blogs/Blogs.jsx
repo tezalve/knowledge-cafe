@@ -47,7 +47,9 @@ const Blogs = () => {
             </div>
             <div className='right-side-containter'>
                 <Time times={times}></Time>
-                <Bookmarks bookmarks={bookmarks}></Bookmarks>
+                <div className='bookmarks-container'>
+                    <Bookmarks bookmarks={bookmarks}></Bookmarks>
+                </div>
                 <ToastContainer/>
             </div>
         </div>

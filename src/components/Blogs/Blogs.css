@@ -16,6 +16,12 @@
     padding: 40px;
 }
 
+.bookmarks-container{
+    background-color: rgb(65, 64, 64);
+    padding: 15px;
+    margin-top: 10px;
+}
+
 @media only screen and (max-width: 767px) {
     .blog-page-container{
         grid-template-columns: 1fr;

@@ -7,7 +7,7 @@ const Time = ({times}) => {
         sum = sum + parseInt(time);
     }
     return (
-        <div>
+        <div className='time'>
             <p>Spent time on read : <span>{sum}</span> min</p>
         </div>
     );
