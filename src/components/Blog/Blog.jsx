@@ -3,7 +3,7 @@ import './Blog.css'
 import bookmarklogo from "../../../public/bookmark-regular.svg"
 
 const Blog = (props) => {
-    const {authorImg, authorName, blogTitle, img, time} = props.blog;
+    const {authorImg, authorName, blogTitle, img, time, publish} = props.blog;
     const handleBookmark = props.handleBookmark;
     const handleTime = props.handleTime;
     
@@ -15,7 +15,7 @@ const Blog = (props) => {
                     <img className='authorImg' src={authorImg} alt="" />
                     <div>
                         <h4>{authorName}</h4>
-                        <p className='para'>Mar 15 (4 days ago)</p>
+                        <p className='para'>{publish}</p>
                     </div>
                 </div>
                 <p className='para'><span className='min'>{time} </span> min read<span className='bookmarks' onClick={() => handleBookmark(blogTitle)}><img className='bookmark' src={bookmarklogo} alt="" /></span></p>

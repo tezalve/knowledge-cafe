@@ -5,7 +5,8 @@
         "blogTitle": "Build a Web3 App With React.js",
         "img": "https://miro.medium.com/v2/resize:fit:700/1*0cB4wbO4o9J4tRkX8Mxtug.jpeg",
         "authorImg": "https://miro.medium.com/v2/resize:fill:88:88/1*dB2O3mMPNqKGeIaBsjXQBQ.jpeg",
-        "time": "05"
+        "time": "05",
+        "publish": "Mar 5 (20 Days ago)"
     },
     {
         "id": "13cbc7ed-a61b-4883-9d42-82d7d8642b86",
@@ -13,7 +14,8 @@
         "blogTitle": "The 9 Best Video Games for Developers",
         "img": "https://images.ctfassets.net/cjwb7umaxoxv/6ewcAd0vqNGYLsgpDXXXmj/e000a98558d1f34e809246e86d7b77ad/VideoGames_moshed.jpg?w=500&q=50",
         "authorImg": "https://images.ctfassets.net/cjwb7umaxoxv/JbXBOU0hCT3RYp0JK0Ya8/3bb82e84aa7d2624c0da94bf0d7c22fa/Luis-Minvielle-1-1-pic.png",
-        "time": "10"
+        "time": "10",
+        "publish": "Mar 10 (15 Days ago)"
     },
     {
         "id": "307f166f-1d04-4573-bc37-2f461ea9d4f7",
@@ -21,7 +23,8 @@
         "blogTitle": "Dolt - A SQL Database that Works like Git",
         "img": "https://images.ctfassets.net/cjwb7umaxoxv/3AdsJbL7xBARrvz2QzWab6/96b1925db1b4101b37bba60dad7463f0/Dolt_datbase.jpg?w=600&fl=progressive&q=85",
         "authorImg": "https://images.ctfassets.net/cjwb7umaxoxv/1fNMz1YJpzB8Hj0YKbt1JG/d61fa035054311556b11f31c94acf19b/2_XRXyfZ9LIDjt_5A6k48CEQ.jpeg",
-        "time": "15"
+        "time": "15",
+        "publish": "Mar 15 (10 Days ago)"
     },
     {
         "id": "4bf9798f-63bc-4a83-b0c6-6a3b816fe922",
@@ -29,6 +32,7 @@
         "blogTitle": "The Case for Cryptographic Data Wallets",
         "img": "https://images.ctfassets.net/cjwb7umaxoxv/txVMu7xvjWHPjCg0FpIQc/fc75e78b735f62ca27e0e193ffadfa54/Crypto_data_wallets.jpg?w=600&fl=progressive&q=85",
         "authorImg": "https://images.ctfassets.net/cjwb7umaxoxv/2cvJMYOgpkovnwFeepTYxW/db49e8df7b7ed82087d595f23b88c9f1/1_USe3E3uglor7Ptp7nsv1sg.jpeg",
-        "time": "20"
+        "time": "20",
+        "publish": "Mar 20 (5 Days ago)"
     }
 ]
