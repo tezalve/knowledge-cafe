@@ -7,6 +7,7 @@
     display: flex;
     justify-content:space-between;
     padding: 1rem 3rem;
+    align-items: center;
 }
 hr{
     border: 1px solid rgb(87, 87, 87);
